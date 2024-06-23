@@ -1,0 +1,15 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void print(const vector<int>& data, const string& delim) {
+    for (int i = 0; i < data.size(); ++i) {
+        cout << data[i] << (i != data.size() - 1 ? delim : "");
+    }
+}
+
+int main() {
+    vector<int> data = { 1, 2, 3 };
+    print(data, ", "); // 1, 2, 3
+    return 0;
+}
