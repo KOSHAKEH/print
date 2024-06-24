@@ -2,9 +2,9 @@
 #include <vector>
 using namespace std;
 
-void print(const vector<int>& data, const string& delim) {
+void print(const vector<int>& data, const string& simvol) {
     for (int i = 0; i < data.size(); ++i) {
-        cout << data[i] << (i != data.size() - 1 ? delim : "");
+        cout << data[i] << (i != data.size() - 1 ? simvol : "");
     }
 }
 
